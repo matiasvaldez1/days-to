@@ -24,3 +24,70 @@ a {
     background: black;
   }
 }
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  background-color: transparent;
+  border: 2px solid #999;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border-top-color: red;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.countdown article {
+  margin: 10px;
+}
+
+.countdown p {
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  width: 100px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.countdown h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
